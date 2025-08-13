@@ -1,0 +1,7 @@
+flask
+duckdb
+pandas
+schedule
+google-generativeai
+tabulate
+python-dotenv
