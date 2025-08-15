@@ -2,7 +2,6 @@
 Back-end of chatbot application that answers user queries based on data from CSV files.
 
      This project is an intelligent chatbot API that:
-
 (1) Accepts a natural language question from the user.
 (2) Uses Google Gemini to convert it into a DuckDB SQL query.
 (3) Executes the query on a DuckDB database created from a CSV file.
