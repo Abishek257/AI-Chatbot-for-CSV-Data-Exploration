@@ -81,12 +81,14 @@ PO61773	Vendor X	10,000
 PO74305	Vendor X	15,000
 
 
-📸 Screenshots
-🔐 Login Page
+## 📸 Screenshots
 
-💬 Chat Interface
+### 🔐 Login Page  
+![Login Page](assets/login.png)  
 
-📌 Placed screenshots in a folder called assets/ inside the repo.
+### 💬 Chat Interface  
+![Chat Interface](assets/chat.png)
+
 
 📡 API Usage (Optional – direct endpoint)
 
