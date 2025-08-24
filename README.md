@@ -37,19 +37,21 @@ An intelligent chatbot application that enables **natural language queries on CS
 
 
 ## ⚙️ Setup  
-### 1. Create & Activate Virtual Environment  
+
+1. Create & Activate Virtual Environment  
 
 ```bash
 python -m venv venv
 source venv/bin/activate      # Linux/Mac
 venv\Scripts\activate         # Windows
 
-### 2. Install Dependencies
+2. Install Dependencies
 
 pip install -r requirements.txt
 
-## 💻 Usage
-### 🔑 Step 1: Login
+
+💻 Usage
+🔑 Step 1: Login
 
 Open http://127.0.0.1:5000
 
@@ -57,16 +59,16 @@ Enter Email + select Role
 
 Redirected to Chat Interface
 
-### 💬 Step 2: Ask Questions
+💬 Step 2: Ask Questions
 
 Example:
 
-#### Request:
+Request:
 
 What is the total spend with Vendor X this month?
 
 
-#### Response (UI):
+Response (UI):
 
 Summary:
 
@@ -78,19 +80,20 @@ PO Number	Vendor	Total Amount
 PO61773	Vendor X	10,000
 PO74305	Vendor X	15,000
 
-## 📸 Screenshots
+
+📸 Screenshots
 🔐 Login Page
 
 💬 Chat Interface
 
 📌 Placed screenshots in a folder called assets/ inside the repo.
 
-## 📡 API Usage (Optional – direct endpoint)
+📡 API Usage (Optional – direct endpoint)
 
-### Endpoint:
+ Endpoint:
 POST /query
 
-#### Request:
+ Request:
 
 {
   "user_question": "List the top 5 distinct PO numbers",
@@ -99,7 +102,7 @@ POST /query
 }
 
 
-#### Response:
+ Response:
 
 {
   "markdown_table": "| PO Number   |\n|:------------|\n| PO61773     |\n| PO74305     |\n| PO78437     |\n| PO89895     |\n| PO55995     |",
