@@ -126,10 +126,10 @@ PO74305	     Vendor X	   15,000
 ## 📸 Screenshots
 
 ### 🔐 Login Page  
-![Login Page](assets/login.png)  
+![Login Page](assets/ChatBot_Login.png)  
 
 ### 💬 Chat Interface  
-![Chat Interface](assets/chat.png)
+![Chat Interface](assets/ChatBot_chat_interface.png)
 
 ## 📡 API Usage (Optional – direct endpoint)
 
