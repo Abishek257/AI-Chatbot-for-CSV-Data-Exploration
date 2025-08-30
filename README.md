@@ -57,6 +57,38 @@ venv\Scripts\activate         # Windows
 
 pip install -r requirements.txt
 
+**3. Configure Environment**
+
+Edit .env:
+
+**Gemini API Key**
+
+GEMINI_API_KEY=your_api_key_here
+
+**Gemini Model**
+
+GEMINI_MODEL=models/gemini-1.5-pro
+
+**DuckDB Config**
+
+DB_FILE=data.duckdb
+
+TABLE_NAME=data
+
+**CSV Dataset**
+
+CSV_FILE_PATH=po_details.csv
+
+**Prompt File**
+
+PROMPT_FILE=prompt.txt
+
+**4. Run the Application**
+
+python app.py
+
+Runs on http://127.0.0.1:5000
+
 
 ## 💻 Usage
 
