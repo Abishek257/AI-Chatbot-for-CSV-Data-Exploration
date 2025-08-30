@@ -24,34 +24,43 @@ An intelligent chatbot application that enables **natural language queries on CS
 ## 📂 Project Structure  
 
 ├── app.py # Flask API & web app entry point
-├── data_controller.py # Handles CSV → DuckDB loading & refresh
-├── llm_controller.py # Gemini integration: NL→SQL + results formatting
-├── prompt.txt # Prompt template for Gemini
-├── po_details.csv # Example dataset (Purchase Orders)
-├── requirements.txt # Python dependencies
-├── .env # Environment configuration (keys, paths)
-├── templates/
-│ ├── login.html # Login page (email + role)
-│ └── chat.html # Chat UI (bubbles + floating send button)
-└── README.md # Project documentation
 
+├── data_controller.py # Handles CSV → DuckDB loading & refresh
+
+├── llm_controller.py # Gemini integration: NL→SQL + results formatting
+
+├── prompt.txt # Prompt template for Gemini
+
+├── po_details.csv # Example dataset (Purchase Orders)
+
+├── requirements.txt # Python dependencies
+
+├── .env # Environment configuration (keys, paths)
+
+├── templates/
+
+│ ├── login.html # Login page (email + role)
+
+│ └── chat.html # Chat UI (bubbles + floating send button)
+
+└── README.md # Project documentation
 
 ## ⚙️ Setup  
 
-1. Create & Activate Virtual Environment  
+**1. Create & Activate Virtual Environment**
 
-```bash
 python -m venv venv
 source venv/bin/activate      # Linux/Mac
-venv\Scripts\activate         # Windows
+venv\Scripts\activate         # Windows 
 
-2. Install Dependencies
+**2. Install Dependencies**
 
 pip install -r requirements.txt
 
 
-💻 Usage
-🔑 Step 1: Login
+## 💻 Usage
+
+**🔑 Step 1: Login**
 
 Open http://127.0.0.1:5000
 
@@ -59,26 +68,27 @@ Enter Email + select Role
 
 Redirected to Chat Interface
 
-💬 Step 2: Ask Questions
+**💬 Step 2: Ask Questions**
 
-Example:
+**Example:**
 
-Request:
+**Request:**
 
 What is the total spend with Vendor X this month?
 
+**Response (UI):**
 
-Response (UI):
-
-Summary:
+**Summary:**
 
 Your total spend with Vendor X this month is $25,000.
 
-Table (rendered beautifully):
+**Table (rendered beautifully):**
 
-PO Number	Vendor	Total Amount
-PO61773	Vendor X	10,000
-PO74305	Vendor X	15,000
+PO Number	  Vendor	      Total Amount
+
+PO61773	     Vendor X	   10,000
+
+PO74305	     Vendor X	   15,000
 
 
 ## 📸 Screenshots
@@ -89,13 +99,13 @@ PO74305	Vendor X	15,000
 ### 💬 Chat Interface  
 ![Chat Interface](assets/chat.png)
 
+## 📡 API Usage (Optional – direct endpoint)
 
-📡 API Usage (Optional – direct endpoint)
-
- Endpoint:
+ **Endpoint:**
+ 
 POST /query
 
- Request:
+**Request:**
 
 {
   "user_question": "List the top 5 distinct PO numbers",
@@ -104,7 +114,7 @@ POST /query
 }
 
 
- Response:
+**Response:**
 
 {
   "markdown_table": "| PO Number   |\n|:------------|\n| PO61773     |\n| PO74305     |\n| PO78437     |\n| PO89895     |\n| PO55995     |",
